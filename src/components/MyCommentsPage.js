@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Typography } from '@material-ui/core'
 import MyComments from './MyComments'
-import PropagateLoader from 'react-spinners/PropagateLoader'
+
 import * as api from '../api'
 import { useLocation } from 'react-router-dom'
 
@@ -38,7 +38,7 @@ export default function MyCommentsPage({match}) {
     return (
         <div>
             {loading ? <div style={{position: 'absolute', top: '50%', left: '50%'}}>
-                            <PropagateLoader color={'teal'} />
+                           
                        </div> : (myComments.length > 0 ?  
                 <>
                     {myComments.map(comment => {

@@ -14,16 +14,16 @@ export default makeStyles(theme => ({
     },
     cardheader: {
         alignSelf: 'flex-start',
-        padding: 8,
+        padding: '8px',
         wordBreak: 'break-all'
     },
     avatar: {
-        padding: 0,
-        margin: 0
+        padding: '0px',
+        margin: '0px'
     },
     cardcontent: {
         alignSelf: 'flex-start',
-        padding: 5
+        padding: '5px'
     },
     cardactionarea: {
         display: 'flex',
@@ -38,7 +38,7 @@ export default makeStyles(theme => ({
     },
     cardactions: {
         display: 'flex',
-        padding: 5,
+        padding: '5px',
         width: '100%',
         justifyContent: 'space-between'
     },

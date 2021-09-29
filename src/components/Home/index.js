@@ -2,7 +2,7 @@ import React, { useEffect, useState} from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import Posts from './Posts/Posts'
 import useStyles from './style'
-import PropagateLoader from 'react-spinners/PropagateLoader'
+
 import './style.css'
 import { Container, IconButton, Typography} from '@material-ui/core'
 import * as api from '../../api'
@@ -68,7 +68,7 @@ export default function Home({match}){
         <div className={classes.root}>
             <Container maxWidth='sm' className={classes.container}>
                 {loading ? <div style={{position: 'absolute', top: '50%', left: '50%'}}>
-                                <PropagateLoader color={'teal'} />
+                                
                            </div> : (posts.length > 0 ? posts.map(post => { 
                     return(
                             <Posts postCreator={post.postCreator}
